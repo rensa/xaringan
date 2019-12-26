@@ -18,6 +18,15 @@ $endfor$
 $for(css)$
     <link rel="stylesheet" href="$css$" type="text/css" />
 $endfor$
+$if(styles)$
+    <style>
+      :root {
+      $for(styles/pairs)$
+        --$it.key$: $for(it.value)$$it.value$$sep$, $endfor$
+      $endfor$
+      }
+    </style>
+$endif$
   </head>
   <body>
     <textarea id="source">
