@@ -22,7 +22,7 @@ $if(styles)$
     <style>
       :root {
       $for(styles/pairs)$
-        --$it.key$: $for(it.value)$$it.value$$sep$, $endfor$
+        --$it.key$: $for(it.value)$$it.value$$sep$, $endfor$;
       $endfor$
       }
     </style>
