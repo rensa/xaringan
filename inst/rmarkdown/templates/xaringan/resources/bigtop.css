@@ -1,0 +1,31 @@
+/* bigtop: customisable xaringan template prototype */
+
+.remark-slide-content {
+  background-color: var(--bg-colour);
+  font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+  font-family: var(--header-font);
+  font-weight: normal;
+  color: var(--colour);
+}
+
+a, a > code, .remark-code {
+  font-family: var(--code-font);
+  color: #88398a;
+}
+.remark-code-line-highlighted { background-color: rgba(136, 57, 138, 0.3); }
+
+.remark-slide-content.inverse {
+  background-color: var(--bg-colour-inverse);
+}
+
+.remark-slide-content.inverse,
+.remark-slide-content.inverse h1,
+.remark-slide-content.inverse h2,
+.remark-slide-content.inverse h3,
+.remark-slide-content.inverse a,
+inverse a > code {
+  color: var(--colour-inverse);
+}
